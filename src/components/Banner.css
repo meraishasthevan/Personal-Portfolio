@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    background: linear-gradient(135deg, #f7797d, #FBD786, #C6FFDD);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.banner-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.banner-design {
+    color: #2f3542;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+    width:500px;
+    padding: 50px;
+}
+
+.banner-design:hover {
+    transform: translateX(10px);
+    background-color: #ffeaa7;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ff4757;
+    transition: color 0.3s ease;
+}
+
+h1 span {
+    color: #3742fa;
+    transition: color 0.4s ease;
+}
+
+h1 span:hover {
+    color: #ff6b81;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+h3 span {
+    color: #ff6348;
+    font-weight: bold;
+}
+
+button {
+    background-color: #ff6348;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+button a i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    color:white;
+}
+
+button:hover {
+    background-color: #ff4757;
+    transform: scale(1.1);
+}
+
+button:hover i {
+    transform: translateY(3px); 
+}
+
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    color: #ff4757;
+    font-size: 1.8rem;
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.social-icons a:hover {
+    color: #3742fa;
+    transform: scale(1.2);
+}
+
+.banner-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.banner-right img {
+    float: right;
+    width: 90%;
+    height: 500px;
+    max-width: 500px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    object-fit: cover;
+}
+
+.banner-right img:hover {
+    transform: rotate(5deg) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1024px) {
+    .banner-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner-main, .banner-right {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .banner-right img {
+        width: 80%;
+        float: none;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 8px 20px;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+}

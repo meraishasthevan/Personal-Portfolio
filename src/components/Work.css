@@ -1,0 +1,73 @@
+#work {
+    padding: 20px;
+    text-align: center;
+}
+
+#work h1 {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+#work h1 span {
+    color: #ff6347; 
+}
+
+.work-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-item > div {
+    width: 45%; 
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    opacity: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.work-item h1 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.work-item > div:hover .overlay {
+    opacity: 1; 
+}
+
+@media (max-width: 768px) {
+    .work-item > div {
+        width: 100%; 
+    }
+}
